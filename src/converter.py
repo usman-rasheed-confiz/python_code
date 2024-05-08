@@ -26,4 +26,4 @@ def array_to_dataframe(data: Any, columns: Optional[List[str]] = None) -> pd.Dat
         raise ValueError("The length of 'columns' must match the number of columns in the data.")
 
     # Create and return the DataFrame
-    return pd.DataFrame(data, columns=columns)
+    return pd.DataFrame(data, columns=columns,dtype=np.int64)
